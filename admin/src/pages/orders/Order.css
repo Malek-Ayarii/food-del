@@ -1,0 +1,100 @@
+.order {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    padding-top: 50px;
+    color: #4b5563;
+}
+
+.order h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.order-item img {
+    width: 50px;
+}
+
+.order-item-food {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.order-item-name {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.order-item-address {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.order-item-phone {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.order-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.order-item-select {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-weight: 500;
+    color: #374151;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.order-item-select:focus, .order-item-select:hover {
+    border-color: #ff4343;
+}
+
+@media (max-width: 1000px) {
+    .order {
+        width: 90%;
+    }
+    .order-item {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        position: relative;
+    }
+    .order-item img {
+        width: 40px;
+    }
+}
